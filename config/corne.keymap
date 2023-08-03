@@ -8,29 +8,39 @@
 
         home_layer {
             bindings = <
-  &kp TAB  &kp Q  &kp W  &kp E      &kp R     &kp T        &kp Y     &kp U      &kp I    &kp O     &kp P   &kp BSLH
-  &kp ESC  &kp A  &kp S  &kp D      &kp F     &kp G        &kp H     &kp J      &kp K    &kp L  &kp SEMI    &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C      &kp V     &kp B        &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+  &kp TAB  &kp Q  &kp W  &kp E      &kp R     &kp T        &kp Y     &kp U      &kp I    &kp O     &kp P      &kp BSLH
+  &kp ESC  &kp A  &kp S  &kp D      &kp F     &kp G        &kp H     &kp J      &kp K    &kp L  &kp SEMI       &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C      &kp V     &kp B        &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT_GUI
                          &mo 2  &kp LCTRL  &kp BSPC    &kp SPACE  &kp RALT      &mo 1
             >;
         };
 
         raise_layer {
             bindings = <
-&kp GRAVE    &trans  &kp UP_ARROW     &trans    &trans         &trans            &trans        &trans            &trans          &kp LPAR           &kp RPAR        &kp EQUAL
-   &trans  &kp LEFT      &kp DOWN  &kp RIGHT  &kp HOME    &kp PAGE_UP    &kp K_PREVIOUS    &kp K_NEXT  &kp K_PLAY_PAUSE    &kp LEFT_BRACE    &kp RIGHT_BRACE        &kp MINUS
-&kp LSHFT    &trans        &trans     &trans   &kp END  &kp PAGE_DOWN      &kp C_VOL_DN  &kp C_VOL_UP        &kp K_MUTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_SHIFT
-                                      &trans  &kp LCMD        &kp DEL     &kp LG(LCTRL)     &kp ENTER            &trans
+&kp GRAVE    &trans  &kp UP_ARROW     &trans            &trans         &trans              &kp K_PREV    &kp K_NEXT  &kp K_PLAY_PAUSE          &kp LPAR           &kp RPAR     &kp EQUAL
+   &trans  &kp LEFT      &kp DOWN  &kp RIGHT          &kp HOME    &kp PAGE_UP            &kp C_VOL_DN  &kp C_VOL_UP        &kp K_MUTE    &kp LEFT_BRACE    &kp RIGHT_BRACE     &kp MINUS
+&kp LSHFT    &trans        &trans     &trans           &kp END  &kp PAGE_DOWN    &kp LG(LEFT_CONTROL)        &trans            &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_GUI
+                                      &trans  &kp LEFT_CONTROL        &kp DEL               &kp ENTER  &kp LEFT_ALT            &trans
             >;
         };
 
         lower_layer {
             bindings = <
-   &kp TAB        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5      &kp N6  &kp N7  &kp N8  &kp N9        &kp N0  &kp NUMBER_9
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp N4  &kp N5  &kp N6  &kp NUMBER_5  &kp NUMBER_6
- &kp LSHFT        &trans        &trans        &trans        &trans        &trans      &trans  &kp N1  &kp N2  &kp N3  &kp NUMBER_2  &kp NUMBER_3
-                                            &kp LGUI        &trans     &kp SPACE     &kp RET  &trans  &trans
+    &trans        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0        &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &kp N4  &kp N5  &kp N6  &trans        &trans
+    &trans        &trans        &trans        &trans        &trans        &trans    &kp NUMBER_0  &kp N1  &kp N2  &kp N3  &trans  &kp LEFT_GUI
+                                              &trans         &mo 3        &trans          &trans  &trans  &trans
+            >;
+        };
+
+        function_layer {
+            bindings = <
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
 };
+
